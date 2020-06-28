@@ -1,0 +1,61 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.0.0",
+        "axios": "^0.19",
+        "bootstrap": "^4.0.0",
+        "cross-env": "^7.0",
+        "jquery": "^3.2",
+        "laravel-mix": "^5.0.1",
+        "lodash": "^4.17.13",
+        "popper.js": "^1.12",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-redux": "^7.2.0",
+        "redux": "^4.0.5",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.15.2",
+        "sass-loader": "^8.0.0"
+    },
+    "dependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@grapecity/spread-excelio": "^13.0.7",
+        "@vtex/react-csv-parse": "^3.0.2",
+        "array-move": "^2.2.1",
+        "file-saver": "^2.0.2",
+        "jquery-ui": "^1.12.1",
+        "moment": "^2.24.0",
+        "rc-color-picker": "^1.2.6",
+        "react-beautiful-dnd": "^13.0.0",
+        "react-color-picker": "^4.0.2",
+        "react-datepicker": "^2.14.1",
+        "react-drag-listview": "^0.1.6",
+        "react-papaparse": "^3.0.3",
+        "react-router-dom": "^5.1.2",
+        "react-sortable-hoc": "^1.11.0",
+        "xlsx": "^0.15.6"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ],
+        "plugins": [
+            [
+                "@babel/plugin-proposal-class-properties",
+                {
+                    "loose": true
+                }
+            ]
+        ]
+    }
+}

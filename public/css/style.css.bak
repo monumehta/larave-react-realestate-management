@@ -1,0 +1,473 @@
+
+/*=======================================================
+                        Fonts
+========================================================*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+
+@font-face {font-family: 'Rubik Regular';font-style: normal;font-weight: normal;src: local('Rubik Regular'), url('../fonts/Rubik-Regular.woff') format('woff');}
+@font-face {font-family: 'Rubik Italic';font-style: normal;font-weight: normal;src: local('Rubik Italic'), url('../fonts/Rubik-Italic.woff') format('woff');}
+@font-face {font-family: 'Rubik Light';font-style: normal;font-weight: normal;src: local('Rubik Light'),url('../fonts/Rubik-Light.woff') format('woff');}
+@font-face {font-family: 'Rubik Light Italic';font-style: normal;font-weight: normal;src: local('Rubik Light Italic'), url('../fonts/Rubik-LightItalic.woff') format('woff');}
+@font-face {font-family: 'Rubik Medium';font-style: normal;font-weight: normal;src: local('Rubik Medium'), url('../fonts/Rubik-Medium.woff') format('woff');}
+@font-face {font-family: 'Rubik Medium Italic';font-style: normal;font-weight: normal;src: local('Rubik Medium Italic'),url('../fonts/Rubik-MediumItalic.woff') format('woff');}
+@font-face {font-family: 'Rubik Bold';font-style: normal;font-weight: normal;src: local('Rubik Bold'), url('../fonts/Rubik-Bold.woff') format('woff');}
+@font-face {font-family: 'Rubik Bold Italic';font-style: normal;font-weight: normal;src: local('Rubik Bold Italic'), url('../fonts/Rubik-BoldItalic.woff') format('woff');}
+@font-face {font-family: 'Rubik Black';font-style: normal;font-weight: normal;src: local('Rubik Black'), url('../fonts/Rubik-Black.woff') format('woff');}
+@font-face {font-family: 'Rubik Black Italic';font-style: normal;font-weight: normal;src: local('Rubik Black Italic'), url('../fonts/Rubik-BlackItalic.woff') format('woff');}
+/*=======================================================
+                        Common code
+========================================================*/
+html {direction: rtl;}
+.rtl {direction: rtl;}
+body {margin: 0px;padding: 0px;font-family: 'Rubik Regular';font-weight: 400;font-size: 14px;overflow-x: hidden;}
+object {cursor: pointer !important;pointer-events: none;}
+.fa {cursor: pointer !important;}
+a {text-decoration: none !important;cursor: pointer !important;}
+a:hover {color: #171a2b;}
+button,input[type='submit'] {cursor: pointer;}
+* {  margin: 0px;padding: 0px;}
+ul,li,ol,p,h1,h2,h3,h4,h5,h6,figure {margin: 0px;padding: 0px;font-weight: 400;}
+ul,li {list-style: none;}
+input:focus,button:focus {outline: none;box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25) !important;}
+.clearfix {clear: both;}
+img {max-width: 100%;width: auto;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+h1 {font-size: 50px;color: #fff;}
+h2 {font-size: 60px;font-family: Rubik Light;}
+h3 {font-size: 36px;}
+h4 {font-size: 30px;}
+h5 {font-size: 20px;}
+h6 {font-size: 14px;}
+p {color: #6d7a83;font-size: 14px;line-height: 26px;}
+a {-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;text-decoration: none !important;}
+img:hover {-webkit-transition: 0.4s ease-in-out;-moz-transition: 0.4s ease-in-out;-ms-transition: 0.4s ease-in-out;-o-transition: 0.4s ease-in-out;transition: 0.4s ease-in-out;}
+li:hover {-webkit-transition: 0.4s ease-in-out;-moz-transition: 0.4s ease-in-out;-ms-transition: 0.4s ease-in-out;-o-transition: 0.4s ease-in-out;transition: 0.4s ease-in-out;}
+/** form input placeholder **/
+::-webkit-input-placeholder {font-size: 15px;color: #b3b3b3;}
+::-moz-placeholder {font-size: 15px;color: #b3b3b3;}
+:-ms-input-placeholder {font-size: 15px;color: #b3b3b3;}
+:-moz-placeholder {font-size: 15px;color: #b3b3b3;}
+.container{max-width: 100%;width: 100%;padding: 0 30px;}
+.container-1170{max-width: 1170px;}
+.active-text {color: #36b581;}
+.rubik-regular{font-family: 'Rubik Regular';  }
+.rubik-Medium{font-family: 'Rubik Medium';  }
+
+/*=======================================================
+                        BUTTON
+========================================================*/
+.custom-btn{min-width: 270px;border-radius: 5px;box-shadow: 0 0 3.5px rgba(0,0,0,0.5);background-color: #ffc106;font-family: 'Rubik bold';min-height: 41px;}
+.custom-btn:hover{color: #fff;}
+.custom-btn.focus, .custom-btn:focus {outline: 0;box-shadow: none;}
+button.add_more_btn {min-width: 175px;background-color: #ffc106;    font-family: 'Rubik Regular';min-height: 41px;border-radius: 5px;box-shadow: 0 0 3.5px rgba(0,0,0,0.2);font-size: 16px;letter-spacing: 0px;color: #171a2b;font-weight: 400;text-align: center;}
+button.add_more_btn i.fa.fa-plus {border: 2px solid;border-radius: 50%;overflow: hidden;width: 19px;height: 19px;font-size: 12px;line-height: 17px;text-align: center;float: left;position: relative;top: 3px;}
+.secondary_btn {/**blue btn **/
+min-width: 173px;border-radius: 5px;background-color: #06b4ff;font-size: 16px;letter-spacing: 0px;line-height: 41px;color: #fefefe;text-align: center;display: block;padding: 0px 10px;}
+.Upload_btn {/**green btn **/
+min-width: 173px;border-radius: 5px;background-color: #3ce062;font-size: 16px;letter-spacing: 0px;line-height: 41px;color: #fefefe;text-align: center;display: block;padding: 0px 10px;}
+
+/*=======================================================
+                     HEADING TITTLE
+========================================================*/
+.Customers-title h5 {line-height: 35px;color: #282828;font-family: 'Rubik Medium';font-weight: 500;}
+
+
+/*=======================================================
+                     input common
+========================================================*/
+.form-group input{border-bottom: 1px solid #000;border-top: 0;border-left: 0;border-right: 0;border-radius: 0;background-color: transparent;margin-top: 2rem; font-family: "Rubik regular";}
+input.custom-input {margin: 0;height: 36px;border-radius: 4px;background-color: #ffffff;border: 1px solid #dfe3e9;width: 100%;font-size: 14px;color: #282828;font-family: Rubik Regular;}
+/* For IE10 */
+select::-ms-expand {display: none;}
+select {background-image: url(../images/dropdown.png);background-repeat: no-repeat;background-position: left 4px center;-webkit-appearance: none;-moz-appearance: none;appearance: none;   line-height: normal !important;padding: 0 3px;outline: none;}
+/*custom-scroll */
+.fixed_header tbody::-webkit-scrollbar, .dashboard_menu .Gc_menu nav::-webkit-scrollbar {width: 6px;}
+.fixed_header tbody::-webkit-scrollbar-track{background: #eaeaea;}
+.fixed_header tbody::-webkit-scrollbar-thumb{background: #06b4ff;}
+.dashboard_menu .Gc_menu nav::-webkit-scrollbar-thumb {background: rgba(241, 241, 244, 0.3);} 
+.dashboard_menu .Gc_menu nav::-webkit-scrollbar-track {background: #1c1c1c; } 
+
+/** checkbox **/
+.custom-control {padding-right: 1.5rem;}
+.custom-control-label::before,   .custom-control-label::after {left: 0;right: -1.5rem;}
+.custom-control-input:checked~.custom-control-label::before {color: #fff;border-color: #ffc106;background-color: #ffc106;border-radius: .25rem;}
+.custom-checkbox .custom-control-label::before {border-radius: 4px;}
+.custom-control-label::before{border-color: #ced0da;}
+/*=======================================================
+                        SECTION
+========================================================*/
+section {position: relative;overflow: hidden;width: 100%;}
+.dashboard_content_block_Main {float: left;padding: 0 240px 0 0;width: 100%;background: #f9f9f9;height: 100vh;}
+.dashboard_menu {width: 240px;background: #171a2b;padding: 25px 0;position: fixed;height: 100vh;bottom: 0;top: 0;z-index: 1;}
+.dashboard_menu figure.logo {margin-bottom: 60px;text-align: center;padding: 0 25px;}
+nav {
+    height: calc(100vh - 365px);
+    overflow: auto;
+    direction: ltr;
+}
+.Gc_menu {text-align: center;}
+.Gc_menu figcaption, .Gc_menu ul li a {font-size: 18px;color: #fff;font-family: 'Rubik Regular';line-height: 37px;display: block; }
+.Gc_menu ul{margin: 30px 0 0;}
+.Gc_menu ul li {margin: 0px 0 0;position: relative;transition: 0.8s ease;padding: 10px 0;}
+.Gc_menu ul li.active {border-left: 5px solid #ffc106;height: 100%;background: #141627;}
+.Gc_menu ul li a img {display: block;margin: 0 auto;}
+a.logout-btn {position: absolute;bottom: 20px;left: 0;right: 0;}
+header{min-height: 75px;background-color: #eaeaea;padding: 0 20px 0 ;}
+.dash_cont_block_inner {padding: 60px 0;}
+.heading_Title{margin-bottom: 60px;}
+.Plan_size_block {border-radius: 10px;box-shadow: 0 0 6.5px rgba(74,74,74,0.2);background-color: #ffffff;border: 1px solid #dfe2e5;text-align: center;padding: 20px;transition: 0.8s ease;-webkit-transition: 0.8s ease;-moz-transition: 0.8s ease;}
+.Plan_size_block h3 {margin: 25px 0;font-weight: 500;letter-spacing: -2px;font-family: "Montserrat";}
+.Plan_size_block ul {border-top: 1px solid #dfe2e5;border-bottom: 1px solid #dfe2e5;padding: 22px 0;}
+.Plan_size_block ul li:nth-child(1){padding: 0 0 25px 0;}
+.Plan_size_block ul li {font-size: 18px;color: #2a282a;font-family: 'Rubik Regular';font-weight: 400;}
+.Plan_size_block ul li span{color: #7f7e80;}
+.Plan_size_block h4 {margin: 25px 0 30px;}
+.Plan_size_block:hover, .Plan_size_block.active {-webkit-transform: scale(1.2);-moz-transform: scale(1.2);transform: scale(1.2);}
+button.price_btn {min-width: 173px;filter: drop-shadow(0 0 3.5px rgba(0,0,0,0.2));font-size: 18px;color: #171a2b;font-weight: 400;text-align: center;transition: 0.8s ease;-webkit-transition: 0.8s ease;-moz-transition: 0.8s ease;position: relative;overflow: hidden;}
+.Plan_size_block:hover button.price_btn, .Plan_size_block.active button.price_btn {background: #eaeaea;color: #171a2b;}
+button.price_btn.btn:focus {background: #eaeaea;}
+span.btn_check {position: absolute;left: 0;bottom: 0;outline: none;line-height: 44px;width: 0;transition: 0.8s ease;opacity: 0;}
+button.price_btn.btn:focus span.btn_check {bottom: 0;background: #eaeaea;opacity: 1;width: 100%;}
+
+/*=======================================================
+                        LOGIN PAGE
+========================================================*/
+.loginSec{background: url('../images/login-banner.jpg') center no-repeat;height: 100vh;background-size: cover;border: 1px solid #fff;}
+.loginSec .head {background-color: #171a2b;}
+.Goinput {padding: 4rem;}
+.Goinput .Goinput input:last-child {margin-top: 2.7rem;}
+.Goinput p{padding-top: 10px;}
+.Goinput p a{color: #818181;font-family: "Rubik regular";}
+.Gologin{background-color: #fff;box-shadow: 0 0 3.5px rgba(0,0,0,0.5);}
+
+/*=======================================================
+                        PASSWORD PAGE
+========================================================*/
+.Gopswrd p:first-child{font-size: 20px;letter-spacing: 0px;line-height: 8px;color: #2a282a;font-family: "Rubik regular";}
+.Gopswrd{padding:2.5rem 4rem;}
+.Gopswrd p {font-size: 16px;letter-spacing: 0px;line-height: 16px;color: #7b7b7c;padding: 10px 21px;font-family: "Rubik regular";}
+.Gopswrd .custom-btn{margin: 1.7rem 0rem;}
+.Gopswrd input{margin-top: 2.5rem;}
+
+/*=======================================================
+                  RESET PASSWORD PAGE
+========================================================*/
+.Goeset p{padding: 0;}
+.Goreset .custom-btn {margin-top: 3.1rem;margin-bottom: 1.6rem;}
+.Goreset p:nth-child(3){font-size: 20px;letter-spacing: 0px;line-height: 8px;color: #2a282a;font-family: "Rubik regular";}
+.Goreset p:nth-child(2){font-size: 16px;letter-spacing: 0px;line-height: 16px;color: #7b7b7c;margin-bottom: 12px;font-family: "Rubik regular";}
+.Goreset{padding: 2.4rem 4rem;}
+.Goreset svg {margin-bottom: 2.5rem;}
+
+/*=======================================================
+                     SCREEN 3 CSS CODE
+========================================================*/
+.dashboard_Table_block {padding: 30px 20px;}
+.search-box {position: relative;max-width: 175px;margin-right: auto;top: 16px;}
+.search-box img{position: absolute;left: 10px;top: 12px;}
+.search-box input[type="text"] {width: 100%;height: 41px;border-radius: 5px;background-color: #ffffff;border: 1px solid #171a2b;padding: 0 5px 0 35px;font-size: 16px;color: #383737;font-family: 'Rubik Regular';font-weight: 400;}
+.search-box input[type="text"]::-webkit-input-placeholder {color: #383737;}
+.search-box input[type="text"]::-moz-placeholder {color: #383737;}
+.search-box input[type="text"]:-ms-input-placeholder {color: #383737;}
+.search-box input[type="text"]:-moz-placeholder {color: #383737;}
+
+.table_block {margin-top: 20px;border-radius: 10px;box-shadow: 0 0 6.5px rgba(74,74,74,0.12);border: 1px solid #dfe2e5;}
+.table_block table th {height: 74px;font-size: 14px;line-height: 65px;padding: 0;color: #b4b5b9;font-family: Rubik Regular;font-weight: 400;border-bottom: 1px solid #dfe2e5;}
+.table_block table  td {font-family: 'Rubik Medium';font-size: 14px;line-height: 44px;color: #2a282a;vertical-align: middle;border-top: 0px solid #dee2e6;border-bottom:2px solid #f0f1f3;}
+.table_block table  tr:last-child td {border-bottom:0px solid #f0f1f3;}
+.table_block td p, .table_block td p a {color: #7d7d7d;    line-height: 44px;}
+.table_block td select {width: 31px;height: 21px;border-radius: 4px;background-image: linear-gradient(0deg, #f1f3f7 0%, #ffffff 100%);border: 1px solid #ced0da;outline: none;font-size: 12px;line-height: 44px;color: #7d7d7d;font-family: Rubik Regular;font-weight: 400;background-image: url(../images/dropdown.png);background-repeat: no-repeat;background-position: left 4px center;-webkit-appearance: none;}
+.action-icons a i {color: #06b4ff;font-size: 15px;}
+.action-icons a:nth-child(1) {margin: 0 0 0 30px;}
+.table_block tr th:nth-child(1), .table_block tr td:nth-child(1) {padding-right: 40px;}
+/** SCREEN 3 POP UP CODE **/
+.ClientForm {padding: 0px 30px;}
+h5#exampleModalCenterTitle {font-size: 24px;letter-spacing: -1px;color: #06b4ff;font-family: Rubik Regular;padding: 0 30px;}
+.ClientForm .form-group {max-width: 245px;width: 100%;}
+.ClientForm label{font-size: 14px;line-height: normal;color: #282828;font-family: Rubik Regular;margin: 0 0 5px;}
+.ClientForm select {padding-right: 15px;max-width: 86px;height: 35px;border-radius: 4px;border: 1px solid #ced0da;font-size: 14px;color: #858585;font-family: Rubik Regular;font-weight: 400;text-align: center;width: 100%;float: left;position: relative;z-index: 1;background-color: transparent;background-position: left 8px center;overflow: hidden !important;margin: 0px 0px 0 1px;}
+img.DropdownBase {position: absolute;left: -1px;top: -3px;}
+button.close {display: none;}
+.modal-footer, .modal-header {border: none;}
+.modal-content { border-radius: 10px;}
+.modal .modal-footer button {width: 114px;line-height: 41px;border-radius: 5px;box-shadow: 0 0 3.5px rgba(0,0,0,0.2);font-size: 18px;letter-spacing: 0px;color: #383737;font-family: Rubik Medium;font-weight: 500;text-align: center;   padding: 0;}
+.modal .modal-footer button:hover,.modal .modal-footer button:focus {background: #06b4ff;border: 1px solid #06b4ff;}
+.modal .modal-footer .add-btn {background-color: #ffc106;margin-right: 15px;}
+.modal .modal-footer .cancel-btn {background-color: #ffffff;border: 1px solid #171a2b;}
+.inline-content  {flex-wrap: nowrap;}
+.ClientForm label {justify-content: end;width: 100%;}
+.ClientForm .selectDropdown {width: 100%;    position: relative;overflow: hidden;}
+#NewClientForm .modal-footer{padding-bottom: 22px;}
+/*=======================================================
+                  SORRY PAGE
+========================================================*/
+.accountSec .header{background-color: #171a2b;padding: 8px 30px;direction: ltr;}
+.accountSec .header .acc-text p{font-size: 18px;color: #ffffff;font-family: 'Rubik regular';}
+.inactiveAcc-part .box{border-radius: 10px;filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.2));border: 1px solid #dfe3e9;padding: 7rem 1rem 9rem 1rem;width: 992px;margin: 5rem auto;}
+.inactiveAcc-part .box p:nth-child(2){font-size: 36px;letter-spacing: 1px;color: #2a282a;font-family: "Rubik regular";margin-top: 30px;}
+.inactiveAcc-part .box p:nth-child(3){font-size: 24px;letter-spacing: 0px;color: #7b7b7c;font-family: "Rubik regular";margin-top: 27px;}
+
+/*=======================================================
+                  SCREEN 4 PROJECT PAGE 
+========================================================*/
+ul.software_update_block {display: -webkit-box; display: -moz-box;display: -ms-flexbox;display: -webkit-flex; display: flex;align-items: center;margin-top: 8px;}
+ul.software_update_block li:first-child {margin-left: 40px;}
+p.Total-updated {font-size: 18px;letter-spacing: 0px;color: #171a2b;font-family: 'Rubik Medium';text-align: right;}
+ul.software_update_block  h6 {font-size: 16px;letter-spacing: 0px;color: #818181;font-family: Rubik Regular;text-align: right;}
+ul.software_update_block .progress{  margin-top: 10px;background-color: #ffffff;border-radius: 2px;    min-width: 250px;}
+ul.software_update_block .progress-bar {background-color: #06b4ff;border-radius: 2px;}
+.Software_upgrade_btn img {float: left;margin-top: 10px;}
+
+.Projects_Table .dropdown-menu {border-radius: 5px;filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.2));background-color: #ffffff;border: 1px solid #dfe3e9;padding: 0;}
+.Projects_Table .dropdown-toggle {width: 112px;height: 36px;border-radius: 4px;background-color: #f4f5f8;border: 1px solid #ced0da;font-size: 14px;color: #2a282a;font-family: 'Rubik regular';background-image: url(../images/dropdown.png);background-repeat: no-repeat;background-position: left 10px center;outline: none;}
+.Projects_Table .dropdown-toggle:focus, 
+.Projects_Table .dropdown-toggle:active:focus,
+.Projects_Table .show>.btn-secondary.dropdown-toggle {background-color: #fff;border: 1px solid #ced0da;color: #2a282a;}
+.Projects_Table .dropdown-toggle:after {visibility: hidden;}
+a.dropdown-item {padding: 0 35px 0 10px;text-align: right;border-bottom: 2px solid #eef0f3;font-size: 14px;line-height: 44px;color: #7d7d7d;font-family: 'Rubik regular';font-weight: 400;position: relative;}
+a.dropdown-item svg, a.dropdown-item i {position: absolute;right: 10px;top: 16px;}
+a.dropdown-item i {color: #7d7d7d;-webkit-transition: 0.4s ease-in-out;-moz-transition: 0.4s ease-in-out;-ms-transition: 0.4s ease-in-out;-o-transition: 0.4s ease-in-out;transition: 0.4s ease-in-out;}
+a.dropdown-item:hover .shp0{stroke: #06b4ff;-webkit-transition: 0.4s ease-in-out;-moz-transition: 0.4s ease-in-out;-ms-transition: 0.4s ease-in-out;-o-transition: 0.4s ease-in-out;transition: 0.4s ease-in-out;}
+a.dropdown-item:hover, 
+a.dropdown-item:hover i {color: #06b4ff;}
+
+
+/*=======================================================
+                      SCREEN 5 Tab content -1
+========================================================*/
+.resp-tabs-list li{float: right;}
+.GoTabsList li.tab-list-item {border: none;border-bottom: 4px solid #fff;border-radius: 0;padding: 0 0 8px!important;margin-left: 75px;font-size: 16px;letter-spacing: 0px;line-height: 8px;color: #171a2b;font-family: "Rubik Regular";text-align: center;}
+.GoTabsList li.tab-list-item.resp-tab-active {border-bottom: 4px solid #ffc106;}
+ul.GoTabsList {margin-top: 20px;}
+.GoTab_Content {float: right;width: 100%;    margin-top: 20px;padding: 0; }
+.tab-box{border-radius: 10px;box-shadow: 0 0 6.5px rgba(42,88,174,0.3);background-color: #ffffff;padding: 30px;margin-top: 20px;}
+.add_project {position: relative;}
+.add_project i {border: 2px solid #ffc106;border-radius: 50%;overflow: hidden;width: 19px;height: 19px;font-size: 12px;line-height: 17px;text-align: center;float: left;color: #ffc106;position: absolute;top: 8px;left: -30px;}
+span.comment {font-size: 12px;line-height: 14px;color: #7d7d7d;font-family: "Rubik Regular";}
+.GoTab_Content .ClientForm .form-group {max-width: 80%;width: 100%;}
+
+.GoTab_Content .ClientForm select {min-width: 110px;width: auto;}
+.GoTab_Content .ClientForm textarea {height: 100px;} 
+
+figure.fileupload.GoImgUpload-icon {background: #f4f4f4;display: flex;align-content: center;height: 92%;justify-content: center;align-items: center;width: 100%;box-shadow: 0 0 3.5px rgba(42,88,174,0.3);   margin-top: 15px; }
+figure.fileupload.GoImgUpload-icon img {width: auto;box-shadow: 0 0 0 0;}
+.GoImgUpload figure {margin-top: 15px;}
+.GoImgUpload figure img {width: 100%;box-shadow: 0 0 3.5px rgba(42,88,174,0.3);}
+.GoImgUpload h6 {line-height: 32px;color: #282828;font-family: "Rubik Regular";text-align: right;}
+.GoNextPage {margin-bottom: 80px;margin-top: 30px;}
+.GoNextPage a{min-width: 114px;position: relative;font-size: 18px;color: #383737;font-family: 'Rubik Medium';}
+.GoNextPage a svg {float: left;    margin-top: 3px;}
+.GoNextPage a svg.feather-check { margin-top: 5px;}
+.GoBackgroundPicture .col-md-2,.GoAnotherLogo .col-md-2 {-ms-flex: 0 0 16.666667%;flex: 0 0 18.666667%;max-width: 18.666667%;}
+.GoPhotoGallery figure {margin-bottom: 5px;}
+
+/*=======================================================
+                     SCREEN 6 Tab content -2
+========================================================*/
+.GoTemplateBlock{display: flex;align-items: center;    margin-top: 8px;}
+.GoTemplateBlock .inline-content {position: relative;margin: 0 7px;}
+.GoTemplateBlock li select {padding-right: 15px;min-width: 150px;height: 35px;border-radius: 4px;border: 1px solid #ced0da;font-size: 13px;color: #858585;font-family: Rubik Regular;text-align: center;width: auto;float: left;position: relative;z-index: 1;background-color: transparent;background-position: left 8px center;overflow: hidden !important;margin: 0px 0px 0 1px;}
+.Template_Button button{float: left;}
+.Template_Button button i{float: left;margin-top: 12px;}
+ul.GoTemplateBlock li {font-size: 12px;line-height: 14px;color: #282828;font-family: Rubik Regular;}
+.TemplateTable .custom-control-input:checked~.custom-control-label::before,
+.TemplateTable .custom-control-label::after,
+.TemplateTable .custom-control-label::before {top: 13px;}
+
+/*=======================================================
+                     SCREEN 7 Tab content -3
+========================================================*/
+.Documents_Tabs {border-radius: 10px;filter: drop-shadow(0 0 6.5px rgba(74,74,74,0.1));background-color: #ffffff;border: 1px solid #dfe2e5;}
+button.new_file_btn {width: 141px;border-radius: 5px;    color: #06b4ff;background-color: #fff;border: 1px solid #06b4ff;font-size: 16px;letter-spacing: 0px;line-height: 40px;font-family: Rubik Regular;text-align: center;margin: 0 30px;padding: 0 10px;}
+button.new_file_btn svg.feather-folder-plus {float: left;margin-top: 11px;}
+button.new_file_btn:hover, 
+button.new_file_btn:focus {background-color: #06b4ff;    color: #ffffff;}
+.Documents_List {text-align: right;padding: 15px 0;}
+.Documents_List > ul {margin-top: 50px;}
+.Documents_List > ul li {position: relative;}
+.Documents_List ul  li a{padding: 15px 30px;position: relative;font-size: 16px;letter-spacing: 0px;line-height: 8px;color: #171a2b;font-family: Rubik Regular;    border-bottom: 1px solid #f3f4f4;display: block;}
+.Documents_List ul  li svg.feather-folder {stroke: #05b3ff;height: 18px;width: 18px;margin-left: 10px;}
+.Documents_List ul  li svg.feather-file-text {margin-left: 10px;}
+.Documents_List ul  li svg.feather-more-vertical {position: absolute;stroke: #05b3ff;left: 0;top: 18px;}
+.uploading_heading {color: #7d7d7d;font-size: 16px;position: absolute;right: 48px;top: 65px;}
+.uploading_heading svg{margin-left: 10px;}
+.Doc_edits,
+.Doc_edit2 {display: none;}
+.Doc_edits,
+.Doc_edit2 {width: 166px;border-radius: 5px;box-shadow: 0px 1px 2px rgba(0,0,0,0.2);background-color: #ffffff;border: 1px solid #dfe3e9;   position: absolute;left: -100px;top: 0;z-index: 1;}
+.Doc_edits ul li a,
+.Doc_edit2 ul li a{border: 1px solid #dfe3e9;padding: 15px 10px;}
+.Doc_edits ul li:hover a,
+.Doc_edit2 ul li:hover a{color: #06b4ff}
+.Doc_edits ul li:hover stroke,
+.Doc_edit2 ul li:hover stroke{color: #06b4ff}
+.Doc_edits ul li a img, 
+.Doc_edits ul li a svg,
+.Doc_edit2 ul li a img, 
+.Doc_edit2 ul li a svg {margin-left: 10px;}
+img.hover-rename-icon {display: none;}
+.Doc_edits ul li:hover a img.hover-rename-icon,
+.Doc_edit2 ul li:hover a img.hover-rename-icon {display: inline-block;}
+.Doc_edits ul li:hover a img.rename-icon,
+.Doc_edit2 ul li:hover a img.rename-icon {display: none;}
+.Doc_edits ul li:hover a img.hover-rename-icon,
+.Doc_edit2 ul li:hover a img.hover-rename-icon {display: inline-block;}
+
+/*=======================================================
+                    PASSWORD SCREEN 8 (Tab content -4)
+========================================================*/
+.excel-icon-dark{display: none;}
+.Upload_btn:hover .excel-icon{display: none;   }
+.Upload_btn:hover .excel-icon-dark{display: inline-block;}
+.user-icon-dark{display: none;}
+.updated_btn:hover .user-icon{display: none;   }
+.updated_btn:hover .user-icon-dark{display: inline-block;}
+.Template_Button .Upload_btn {margin-left: 15px;}
+button.Group-btn {min-width: 54px;line-height: 21px;border-radius: 10px;background-color: #1d82c9;border: 1px solid #1d82c9;font-size: 12px;color: #ffffff;text-align: center;margin-left: 10px;}
+button.Group-btn2 {min-width: 54px;line-height: 21px;border-radius: 10px;background-color: #6cb4d2;border: 1px solid #6cb4d2;font-size: 12px;color: #ffffff;text-align: center;margin-left: 10px;}
+button.Group-btn.disabled{background-color: #9bd3fb;border: 1px solid #9bd3fb;}
+tfoot  h5 {font-size: 18px;letter-spacing: 0px;line-height: 35px;color: #282828;font-family: Rubik Regular;}
+.ExcelTable_Edits {position: relative;}
+.ExcelTable_Edits .Doc_edit2 {left: 0;top: 15px;}
+.ExcelTable_Edits svg.feather.feather-more-vertical {float: left;margin:13px 0 13px;}
+.ExcelTable_Edits ul li a {padding: 10px 15px;position: relative;font-size: 14px;letter-spacing: 0px;color: #7d7d7d;border-bottom: 1px solid #f3f4f4;display: block;line-height: normal;}
+.GroupAffiliation_Modal select{padding-right: 15px;min-width: 150px;height: 35px;border-radius: 4px;border: 1px solid #ced0da;font-size: 13px;color: #858585;text-align: center;width: auto;float: left;position: relative;z-index: 1;background-color: transparent;background-position: left 8px center;overflow: hidden !important;margin: 0px 0px 0 1px;}
+.GroupAffiliation_Modal .modal-footer,
+.GroupAffiliation_Modal .modal-header {justify-content: center;}
+.GroupAffiliation_Modal label {width: 100%;font-size: 14px;color: #282828;text-align: center;}
+.GroupAffiliation_Modal .inline-content {flex-wrap: wrap;}
+.GroupAffiliation_Modal span.selectDropdown {min-width: 175px;position: relative;margin: 15px auto 0;overflow: hidden;  }
+.GroupAffiliation_Modal .modal-footer {padding: 0 10px 40px;}
+.GroupAffiliation_Modal .modal-header {padding: 40px  10px 0px;}
+
+/*=======================================================
+                    PASSWORD SCREEN 9B
+========================================================*/
+.passwordSec .Goinput h5 {font-size: 24px;line-height: 30px;color: #171a2b;font-family: "Rubik";text-align: center;}
+button.adding_btn {width: 141px;border-radius: 5px;background-color: #fff;border: 1px solid #06b4ff;color: #06b4ff;font-size: 16px;letter-spacing: 0px;line-height: 40px;font-family: Rubik Regular;text-align: center;margin: 0 30px;padding: 0 10px;}
+button.btn.adding_btn.timeline {width: 175px;}
+button.adding_btn:hover, 
+button.adding_btn:focus {background-color: #06b4ff;color: #ffffff;}
+
+/*=======================================================
+            Account And Package SCREEN 13
+========================================================*/
+.PackageDetail, 
+.accountSetting{margin-top: 30px;}
+.andCompany {text-align: right;margin: 40px 0;}
+.accountSetting label {font-size: 14px;line-height: 20px;color: #282828;}
+.packageUpdate {text-align: right;}
+.packageUpdate h6 {font-size: 17px;letter-spacing: 0px;line-height: 28px;color: #282828;}
+.packageUpdate h5 {font-size: 18px;letter-spacing: 0px;line-height: 18px;color: #171a2b;text-align: right;}
+.packageUpdate .progress {max-width: 180px;}
+.packageUpdate .progress .progress-bar {background-color: #06b4ff;}
+.packageUpdate .Software_upgrade_btn {display: inline-block;margin: 30px 0;}
+.accountSetting {min-height: 600px;}
+.UpdatedFree {   min-height: 350px;}
+.UpdatedFree h6 {   font-size: 18px;   letter-spacing: 0px;   line-height: 25px;   color: #282828;   font-weight: 600;   text-align: right;}
+.UpdatedFree label {   font-size: 14px;   line-height: 32px;   color: #282828;   text-align: right;}
+.UpdatedFree .form-group {max-width: 80%;width: 100%;}
+.accountSetting .col-sm-6.col-md-6 .form-group {margin-bottom: 1rem;max-width: 85%;width: 100%;}
+
+/*=======================================================
+                 Manage Timeline SCREEN 14
+========================================================*/
+.Documents_List ul li a i {color: #05b3ff;height: 18px;width: 18px;margin-left: 10px;font-size: 18px;}
+.manage-wrapper .Documents_Tabs .Documents_List ul>li a:hover {background-color: #f8f8f8;}
+.timeline_2 {padding: 30px;font-size: 16px;letter-spacing: 0px;line-height: 8px;color: #171a2b;}
+.timeline_2 i {color: #7d7d7d;height: 18px;width: 18px;margin-left: 10px;font-size: 18px;}
+.adding-step .form-group {max-width: 90%;width: 100%;padding-right: 60px;position: relative;}
+.adding-step .form-group::before {content: " ";position: absolute;top: 5px;right: 30px;font-size: 17px;font-weight: 600;color: #2a282a;}
+.adding-step .form-group.one::before {content: "1";}
+.adding-step .form-group.two::before {content: "2";}
+.adding-step .form-group.three::before {content: "3";}
+.adding-step .form-group.four::before {content: "4";}
+.adding-step .form-group.five::before {content: "5";}
+.adding-step .form-group.six::before {content: "6";}
+.adding-step .form-group.seven::before {content: "7";}
+.adding-step .form-group.eight::before {content: "8";}
+.manage-wrapper .Documents_Tabs .Documents_List ul>li .Doc_edits ul li svg {margin-left: 10px;stroke: #7d7d7d;}
+.calander-icon{margin-left: 10px;}
+
+/*=======================================================
+                       SCREEN 20
+========================================================*/
+.Address_Block_Table table {border-collapse: collapse;margin: 0;padding: 0;width: 100%;table-layout: fixed;}
+.Address_Block_Table ttable tr {background-color: #f8f8f8;border: 1px solid #ddd;padding: .35em;}
+.Address_Block_Table span.active-text{font-family: 'Rubik Medium';}
+.Address_search .search-box {position: relative;max-width: 175px;margin-right: auto;top: 0;}
+.Address_search .search-box input[type="text"] {height: auto;line-height: 33px;}
+.Address_search .search-box img {top: 7px;}
+.address-block {text-align: right;margin:30px 0;}
+.address-block h4{  line-height: 32px;   color: #171a2b; font-family: 'Rubik Medium';}
+.address-block p {  font-size: 20px;   line-height: 32px;   color: #282828; }
+.Address_Block_Table {margin-top: 30px;}
+.Address_search{border-radius: 10px;box-shadow: 0 0 6.5px rgba(42,88,174,0.3);background-color: #ffffff;padding: 15px;}
+.Address_Block_Table .table td, .Address_Block_Table .table th {text-align: right;}
+.Address_search .GoTemplateBlock .inline-content {position: relative;margin: 0 7px 0 15px;}
+.AddressMain_Block .GoNextPage a {min-width: 160px;font-size: 14px;line-height: 30px;}
+.AddressMain_Block .GoNextPage a img {height: 17px;float: left; margin-top: 6px;}
+.AddressRightBlock {    min-height: 232px;text-align: right;border-radius: 10px;box-shadow: 0 0 6.5px rgba(42,88,174,0.3);background-color: #ffffff;padding: 25px;margin-bottom: 15px;}
+.AddressRightBlock p{border-radius: 0;box-shadow: 0 0 6.5px rgba(0,0,0,0.3);background-color: #ffffff;padding: 5px;margin:10px 0;font-size: 12px;line-height: 16px;color: #7d7d7d;}
+.AddressRightBlock h6{font-size: 12px;line-height: 16px;color: #7d7d7d;}
+.AddressRightBlock label.custom-control-label {color: #282828;font-family: 'Rubik Medium';font-weight: 500;font-size: 20px;}
+.AddressRightBlock .custom-control-label::after {background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");color: #fff;border-color: #ffc106;background-color: #ffc106;border-radius: .25rem;}
+.AddressRightBlock textarea {margin-top: 15px;height: 150px;}
+.AddressMain_Block .GoNextPage {margin-bottom: 30px;}
+.address-block-img {text-align: center;margin-bottom: 80px;}
+
+
+
+
+
+
+
+
+/*=======================================================
+                    RESPONSIVE CODE 
+========================================================*/
+@media(max-width:1239px){
+   .inactiveAcc-part .box {width: 100%;}
+}
+@media (min-width: 768px){
+   /** SCREEN 3 **/
+   .fixed_header{width: 100%;table-layout: fixed;border-collapse: collapse;}
+   .fixed_header tbody{display:block;width: 100%;overflow: auto;height: 565px;}
+   .fixed_header thead tr, .fixed_header tbody tr {display: -webkit-box; display: -moz-box;display: -ms-flexbox;display: -webkit-flex; display: flex;}
+   .fixed_header tbody tr {align-items: center;}
+   .fixed_header th, .fixed_header td {width: 100%;}
+}
+@media (min-width: 576px){
+   .modal-dialog {max-width: 800px;    width: 100%;}
+   .modal-sm {max-width: 400px;}
+}
+
+@media (max-width: 992px){
+/**sorry-screen**/
+   .inactiveAcc-part .box {padding: 4rem 1rem 5rem 1rem;}
+}
+
+@media (max-width: 767px){
+   /**sorry-screen**/
+   .inactiveAcc-part .box p:nth-child(2) {font-size: 28px;line-height: 32px;}
+   .inactiveAcc-part .box p:nth-child(3) {font-size: 19px;margin-top: 12px;}
+   .inactiveAcc-part .box {margin: 3rem auto;}
+   /*--login-screen--*/
+   .Goinput {padding: 2rem;}
+   .Goinput .form-group input{ margin-top: 0rem;}
+   /*reset-pswrd-screen*/
+   .Goreset .custom-btn {margin-top: 2.1rem;margin-bottom: 0.6rem;}
+   .Goreset svg {margin-bottom: 1.5rem;}
+}
+
+@media screen and (max-width: 600px) {
+   /*SCREEN 20*/
+   .Address_Block_Table table {border: 0;}
+   .Address_Block_Table table caption {font-size: 1.3em;}
+   .Address_Block_Table table thead {border: none;clip: rect(0 0 0 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}
+   .Address_Block_Table table tr {border-bottom: 3px solid #ddd;display: block;margin-bottom: .625em;}
+   .Address_Block_Table table td {border-bottom: 1px solid #ddd;display: block;font-size: .8em;text-align: right;}
+   .Address_Block_Table table td::before {/** aria-label has no advantage, it won't be read inside a tablecontent: attr(aria-label);*/content: attr(data-label);float: left;font-weight: bold;text-transform: uppercase;}
+   .Address_Block_Table table td:last-child {border-bottom: 0;}
+
+}
