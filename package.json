@@ -42,7 +42,7 @@
         "react-papaparse": "^3.0.3",
         "react-router-dom": "^5.1.2",
         "react-sortable-hoc": "^1.11.0",
-        "xlsx": "^0.15.6"
+        "xlsx": "^0.17.0"
     },
     "babel": {
         "presets": [
