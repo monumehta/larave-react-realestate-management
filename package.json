@@ -33,7 +33,7 @@
         "array-move": "^2.2.1",
         "file-saver": "^2.0.2",
         "jquery-ui": "^1.12.1",
-        "moment": "^2.24.0",
+        "moment": "^2.29.2",
         "rc-color-picker": "^1.2.6",
         "react-beautiful-dnd": "^13.0.0",
         "react-color-picker": "^4.0.2",
